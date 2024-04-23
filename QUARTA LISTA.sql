@@ -1,5 +1,5 @@
 USE BD044152
--- Exercicio 18
+-- EXEC 18
 GO
 WITH MonthlySales AS (
   SELECT
@@ -36,7 +36,7 @@ FROM
   PivotedSales
 
 
-  --Exercicio 19
+  --EXEC 19
  GO
  WITH RankedPurchases AS (
     SELECT
@@ -59,7 +59,7 @@ WHERE
     PurchaseRank <= 2;
 	GO
 	
------------------Exercicio 20---------------
+-- EXEC 20
 
 CREATE TABLE #twenty (
     Produto NVARCHAR(100),
@@ -99,7 +99,7 @@ WHERE
 DROP TABLE #twenty
 
 
------------------Exercicio 21---------------
+-- EXEC 21
 DECLARE @ProdutoID INT, @QtdeVendida INT, @Descricao VARCHAR(200);
 DECLARE @VendasPorProduto TABLE (ProdutoID INT, Descricao VARCHAR(200), QuantidadeTotal INT);
 
